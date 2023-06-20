@@ -5,22 +5,22 @@ procedure VectorSum is
    B : array(1 .. 5) of Integer := (6, 7, 8, 9, 10); -- Vetor B com tamanho n e valores de exemplo
    m : Integer := A'Length;
    n : Integer := B'Length;
-   
+   maxSize: Integer;
+   C : array(1 .. 100 ) of Integer; -- Vetor C para armazenar a soma de A e B
 begin
    if m > n then
-      C : array(1 .. m ) of Integer; -- Vetor C para armazenar a soma de A e B
+      maxSize := m;
    else
-      C : array(1 .. n ) of Integer; -- Vetor C para armazenar a soma de A e B
-
+      maxSize := n;
    end if;
    -- Realizando a soma dos elementos de A e B
-   for I in C'Range loop
+   for I in 1 .. maxSize loop
       C(I) := A(I) + B(I);
    end loop;
 
    -- Exibindo o vetor C
    Ada.Text_IO.Put("Vetor C: ");
-   for I in C'Range loop
+   for I in 1 .. maxSize loop
       Ada.Text_IO.Put(C(I)'Image & " ");
    end loop;
    Ada.Text_IO.New_Line;

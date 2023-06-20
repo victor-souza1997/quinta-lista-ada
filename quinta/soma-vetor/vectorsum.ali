@@ -7,7 +7,7 @@ RV NO_IO
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV SPARK_05
 
-U vectorsum%b		vectorsum.adb		5cc5cdf5 NE OO SU
+U vectorsum%b		vectorsum.adb		94df679d NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
@@ -37,22 +37,23 @@ D s-stoele.ads		20220628085427 2dc34a04 system.storage_elements%s
 D s-traent.ads		20220628085427 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20220628085427 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20220628085427 1b7d22d2 system.wch_con%s
-D vectorsum.adb		20230620072610 f2311898 vectorsum%b
+D vectorsum.adb		20230620074423 3a2bb2f0 vectorsum%b
 G a e
 G c Z b b [vectorsum standard 3 11 none]
 X 1 ada.ads
-16K9*Ada 20e8 25|1r6 17r4 19r7 21r4
+16K9*Ada 20e8 25|1r6 22r4 24r7 26r4
 X 6 a-textio.ads
-57K13*Text_IO 727e16 25|1w10 17r8 19r11 21r8
-264U14*New_Line 25|21s16
-465U14*Put 25|17s16 19s19
+57K13*Text_IO 727e16 25|1w10 22r8 24r11 26r8
+264U14*New_Line 25|26s16
+465U14*Put 25|22s16 24s19
 X 25 vectorsum.adb
-3U11*VectorSum 3b11 22l5 22t14
-4a4 A(integer) 6r19 7r19 12r13 13r15
-5a4 B(integer) 13r22
-6i4 m{integer} 9r19
-7i4 n{integer} 9r23
-9a4 C(integer) 13m7 18r13 19r23
-12i8 I{integer} 13r9 13r17 13r24
-18i8 I{integer} 19r25
+3U11*VectorSum 3b11 27l5 27t14
+4a4 A(integer) 6r19 18r15
+5a4 B(integer) 7r19 18r22
+6i4 m{integer} 11r7 12r18
+7i4 n{integer} 11r11 14r18
+8i4 maxSize{integer} 12m7 14m7 17r18 23r18
+9a4 C(integer) 18m7 24r23
+17i8 I{integer} 18r9 18r17 18r24
+23i8 I{integer} 24r25
 
