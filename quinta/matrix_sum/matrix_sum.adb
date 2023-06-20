@@ -34,7 +34,8 @@ end if;
                 
             end loop;
         
-         Ada.Text_IO.New_Line;   end loop;
+         Ada.Text_IO.New_Line;
+           end loop;
     
     
 end VectorSum;
