@@ -6,7 +6,7 @@ generic type Element is private;
 
 package Queuemod_Template is
 
-   type Queue is limited private;
+   type Queue is limited private;  --is limited private;
    procedure Create (Q : in out Queue);
    function Empty(Q : Queue) return Boolean;
    procedure Insert(Q : in out Queue; E : Element);
