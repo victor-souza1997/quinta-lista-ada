@@ -1,23 +1,29 @@
 
 package body queuemod is
-        type Queue_Node_T; --declaração mais adiante
-        type Queue_Node_Ptr_T is access Queue_Node_T;
-        type Element_Array is array(Positive range <>) of Element;
+    type Queue_Node_T; --declaração mais adiante
+    type Queue_Node_Ptr_T is access Queue_Node_T;
+    type Element_Array is array(Positive range <>) of Element;
         
     type Queue_Node_T is
     record
         Contents : Element;
         Next : Queue_Node_Ptr_T;
-        end record;
-        type Queue_T is
-        record
+    end record;
+    
+    type Queue_T is
+    record
         Front : Queue_Node_Ptr_T;
         Back : Queue_Node_Ptr_T;
     end record;
 
 
     type Queue_Ptr_T is access Queue_T;
+    
+    
     Q : Queue_Ptr_T;
+    
+    
+    
     procedure Create is
     begin
         Q := new Queue_T;
